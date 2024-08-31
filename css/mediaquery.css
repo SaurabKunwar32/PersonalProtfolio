@@ -1,5 +1,5 @@
 /* **********************************FOR 1350PX query ******************************************* */
-@media (max-width: 1350px) {
+@media (max-width: 1447px) {
   .container {
     max-width: 62rem;
     padding: 0 2rem;
@@ -18,9 +18,10 @@
   }
 }
 
+
 /* **********************************FOR 975PX query ******************************************* */
 
-@media (max-width: 1120px) {
+@media (max-width: 1250px) {
   nav {
     right: 130px;
   }
@@ -41,18 +42,47 @@
   }
 }
 
+
+
+/* ********************************************************* */
+@media (max-width: 1150px) {
+  nav {
+    right: 140px;
+  }
+
+  .container {
+    max-width: 50rem;
+  }
+
+
+  /* .section {
+    padding: 6rem 0;
+  } */
+
+  .sec-one {
+    /* padding-top: 12rem; */
+  }
+}
+
 /* **********************************menu meida ******************************************* */
-@media (max-width: 983px) {
+@media (max-width: 1050px) {
   .logo {
     font-size: 20px;
+    margin: 0;
+    /* padding: 0 2rem; */
   }
 
   .section {
     padding: 4rem;
   }
 
+  .para{
+    padding: 0 6rem;
+  }
+
   .Mname {
-    line-height: 2.2rem;
+    /* line-height: 2.2rem;   */
+    font-size: 3.5rem;
   }
 
   .menu-bar-btn {
@@ -70,19 +100,16 @@
   .navBar {
     height: 100vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 100px;
+    left: 120px;
     background: var(--gradient);
-    backdrop-filter: blur(50px);
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    backdrop-filter: blur(10rem);
+    /* filter: blur(50rem); */
 
     transform: translateX(100%);
     transition: all 0.5s linear;
-    z-index: 11;
+    z-index: 1111;
 
     visibility: hidden;
     opacity: 0;
@@ -94,7 +121,7 @@
     /* align-items: center; */
     margin-top: 5rem;
     line-height: 3rem;
-
+    /* backdrop-filter: blur(50rem); */
   }
 
   .nav-lists li a {
@@ -121,8 +148,6 @@
     position: absolute;
     right: 140px;
   }
-
- 
 
   .grid-3-Columns {
     grid-template-columns: repeat(2, 1fr);
@@ -220,17 +245,35 @@
     align-items: center;
     padding: 0 4rem;
   } */
+
+  .service-card:hover {
+    transform: translateY(0);
+    box-shadow: var(--cardShadow);
+  }
+  
+  
+  .container:hover .service-card:not(:hover){
+    opacity: 1;
+  }
 }
 /* **********************************menu meida ******************************************* */
 
 /* *************************************** 780PX *********************************************/
 
-/* @media (max-width: 770px) {
-  
-  .skillSection .skill {
-    width: 100%;
+@media (max-width: 715px) {
+  .Mname{
+    font-size: 2.5rem;
   }
-} */
+
+  .para{
+    /* margin: 0 auto; */
+    padding: 0 2rem;
+    /* text-align: justify; */
+  }
+}
+ 
+
+/* ************************************** */
 
 @media (max-width: 607px) {
   .section {
@@ -240,6 +283,15 @@
   header {
     padding: 1rem;
     height: 52px;
+  }
+  
+
+  .Mname{
+    font-size: 2.8rem;
+  }
+
+  .para{
+    padding: 0 0.8rem;
   }
 
   .section {
@@ -268,9 +320,7 @@
     grid-template-columns: 1fr;
   }
 
-  .Mname {
-    font-size: 1.4rem;
-  }
+  
 
   .skills-grid .rightShift {
     text-align: center;
@@ -278,6 +328,15 @@
 
   .modes {
     right: 70px;
+  }
+
+  .social-media{
+    margin: 1rem;
+  }
+
+  .para{
+    margin: 0.5rem;
+    text-align: left;
   }
 }
 
@@ -296,33 +355,47 @@
 } */
 
 @media (max-width: 490px) {
+
+  .this{
+    font-size: 1.5rem;
+  }
+
+  .Mname{
+    font-size: 2.3rem;
+  }
   .mainFoot p {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 420px) {
-  /*   
-  .skills-grid{
-    grid-template-columns: repeat(2,1fr);
-    width: 100%;
-    padding: 1rem 0;
-  } */
+@media screen and (max-width: 395px) {
+  .this{
+    font-size: 1.2rem;
+  }
 
-  /* .skill{
-      width: 100%;
-    } */
+  .Mname{
+    font-size: 2rem;
+  }
 }
 
-/* @media (max-width: 395px) {
-  .skillSection .grid-3-Columns {
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 1rem;
-    column-gap: 2rem;
-  }
-} */
+
 
 @media (max-width: 387px) {
+
+  .social-media{
+    margin: 1rem;
+  }
+
+  .para{
+    margin: 0;
+  }
+
+  .this{
+    font-size:0.8rem ;
+  }
+  .Mname{
+    font-size: 1.5rem;
+  }
   .skills-grid {
     grid-template-columns: 1fr;
     row-gap: 0.8rem;

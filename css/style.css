@@ -38,6 +38,9 @@
   color: black;
 }
 
+.serviceColor #service-Box {
+  background: var(--oddbg);
+}
 /* ===================================PRE DEFINE end============================== */
 
 html {
@@ -47,6 +50,9 @@ html {
 
 body {
   overflow-x: hidden;
+  background: var(--oddbg);
+  /* overflow-y: hidden; */
+  /* position: relative; */
 }
 
 /*################################# HEADER START ############################################# */
@@ -73,7 +79,10 @@ header a {
 }
 
 .logo {
-  font-size: 24px;
+  /* background-color: red; */
+  margin-left: 3.5rem;
+  /* padding-left: 3rem; */
+  font-size: 30px;
   font-weight: 600;
   animation: navSlide 0.8s linear alternate;
   text-shadow: 3px 2px 5px rgb(252, 230, 230);
@@ -81,7 +90,9 @@ header a {
 }
 
 .logo span {
+  display: inline-block;
   color: var(--btn-color);
+  transform: rotate(-10deg);
 }
 
 nav {
@@ -220,47 +231,56 @@ h1 {
 
 .sec-one {
   background: var(--oddbg);
-  padding-top: 14rem;
-  padding-bottom: 8rem;
+  padding: 11rem 0 8rem;
+  /* padding-bottom: 8rem; */
   position: relative;
+  /* overflow: hidden; */
 }
 
 .firstColumn {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  animation: leftSide 0.4s linear;
   font-size: 22px;
 }
 
-@keyframes leftSide {
-  0% {
-    transform: translateX(-20rem);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.this {
+/* .this {
   text-transform: uppercase;
   color: var(--btn-color);
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+} */
+
+span{
+  color: var(--btn-color);
+}
+
+.this{
+  text-transform: uppercase;
+  /* color: var(--btn-color); */
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.  5rem;
 }
 
 .para {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0 1.5rem;
   max-width: 25rem;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.Mname{
+  font-size: 4rem;
+  /* color: var(--btn-color); */
 }
 
 .social-media {
+  margin: 2rem 0 ;
   height: 2rem;
   width: 9rem;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 }
 
 .social-list {
@@ -274,6 +294,7 @@ h1 {
   text-decoration: none;
   font-size: 1.5rem;
   color: var(--btn-color);
+  /* background-color: red; */
 }
 
 .social-list li:hover {
@@ -294,6 +315,8 @@ h1 {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   padding: 2px;
+  border: none;
+  outline: none;
 }
 
 .btn a {
@@ -317,26 +340,17 @@ h1 {
 }
 
 .secondColumn {
-  animation: rightSide 0.4s linear;
   transition: all 0.4s linear;
 }
 
-@keyframes rightSide {
-  0% {
-    transform: translateX(20rem);
-  }
 
-  100% {
-    transform: translateX(0);
-  }
-}
 
 .main-img {
   display: flex;
   align-items: center;
   justify-content: center;
   /* background-color: var(--oddbg);  */
-  /* mix-blend-mode: color-burn; */
+  mix-blend-mode: color-burn;
 }
 
 .prof-img {
@@ -370,7 +384,31 @@ h1 {
 .aboutSection img {
   width: 80%;
   /* border: none; */
-  /* mix-blend-mode: color-burn; */
+  mix-blend-mode: color-burn;
+}
+
+.About-text {
+  /* background -color: grey; */
+}
+
+.aboutM p {
+  /* background-color: green; */
+  padding: 10px;
+  text-align: center;
+}
+
+.downloadCV {
+  margin-top: 30px;
+  display: flex;
+  padding-left: 20px;
+}
+
+#dCV {
+  height: 3rem;
+  width: 180px;
+  font-weight: 600;
+  align-items: center;
+  /* outline: none; */
 }
 
 /* **********************about section  end******************* */
@@ -487,6 +525,10 @@ h1 {
   column-gap: 4rem;
 }
 
+.secServices .container{
+  position: relative;
+}
+
 .service-card {
   text-align: center;
   border-radius: 4px;
@@ -497,14 +539,20 @@ h1 {
 }
 
 .service-card:hover {
-  transform: translateY(-1.5rem);
+  transform: translateY(-0.6rem);
   box-shadow: var(--cardShadow);
+}
+
+
+.container:hover .service-card:not(:hover){
+  opacity: 0.6;
 }
 
 #service-Box {
   font-size: 2.5rem;
   padding: 0.5rem;
-  background: rgb(231, 242, 247);
+  /* background: rgb(231, 242, 247); */
+  background: var(--white);
   display: inline-block;
   border-radius: 56% 44% 70% 30%/ 30% 54% 46% 70%;
   position: relative;
@@ -531,7 +579,6 @@ h1 {
 }
 
 .service-Info {
-  opacity: 0.5;
   padding: 0 2px;
 }
 
@@ -625,11 +672,12 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  border-radius: 1rem;
+  border-radius: 5px;
   outline: none;
   border: none;
   transition: all 0.2s linear;
   color: var(--btnTextcolor);
+  text-transform: uppercase;
 }
 
 .Sbtn:hover {

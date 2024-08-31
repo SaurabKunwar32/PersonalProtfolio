@@ -4,6 +4,7 @@ let modes = document.querySelector(".modes");
 modes.addEventListener("click", () => {
   document.body.classList.toggle("lightMode");
   document.body.classList.toggle("textColor");
+  document.body.classList.toggle("serviceColor");
 });
 
 function toggleIcon() {
