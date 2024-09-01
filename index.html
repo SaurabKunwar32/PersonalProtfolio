@@ -8,6 +8,7 @@
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=6" 
     />
     <meta name="description" content="It is my personal Protfolio"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Protfolio</title>
     <!-- **************web logo start -->
      <link rel="shortcut icon" href="web-logo/favicon.ico" type="image/x-icon">
@@ -90,7 +91,7 @@
             <p class="this">Hello, <span>I'm</span></p>
             <h1 class="Mname"> <span>Saurab Kunwar</span></h1>
             <p class="para">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos dolore commodi ipsum ea. Asperiores voluptatibus illum minima eaque ad.
+              " This is my official portfolio website, showcasing my skills, work experience, and achievements in software development. "
             </p>
             <div class="social-media">
               <ul class="social-list">
@@ -109,7 +110,7 @@
               </ul>
             </div>
 
-            <div class="btn">
+            <div class="btn" id="Gbtn">
               <a href="#sec-contact" 
                 >Get In Touch</i
               ></a>
@@ -131,12 +132,14 @@
         <div class="container mainAbout">
           <h1 class="topic">ABOUT ME</h1>
           <div class=" grid grid-Columns aboutBOX">
-            <div class="About-img1">
-              <img src="abt.jpg" alt="mee">
+            <div class="About-img1 ">
+              <img src="abt.jpg" alt="mee" class="ab1">
             </div>
             <div class="About-text">
-              <div class="aboutM"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias maxime dolorem earum, asperiores quo perspiciatis, labore quasi repudiandae sint vero quibusdam consectetur nulla. Quas cumque dolores architecto voluptas voluptatum dignissimos.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate earum deleniti ratione? Expedita cupiditate maxime earum error labore eaque quidem nobis, at praesentium, quod dolor repellendus tempora incidunt vel aspernatur.
+              <div class="aboutM"><p>
+                I'm a dedicated computer science student with a passion for coding, problem-solving, and creating innovative solutions. I enjoy exploring new technologies and building projects that make a difference. Eager to learn and grow, I’m constantly seeking opportunities to expand my skills in software development and beyond.
+                <br><br>
+                 My enthusiasm for tackling challenges drives me to stay updated with the latest industry trends and continuously improve my craft. Whether working independently or as part of a team, I am committed to delivering high-quality results and making a positive impact through technology.
               </p></div>
               <div class="downloadCV">
                 <button class="btn" id="dCV"><a href="#">Download CV</a></button>
@@ -155,13 +158,14 @@
        <section class=" section skillSection " id="skillSection">
         <div class="container mainskill">
           <h1 class="topic">My skills</h1>
-          <p class="commonP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum numquam excepturi cumque, facilis ratione, labore maiores totam culpa ex nihil accusantium minus sed velit tempora et similique quia. Recusandae, mollitia!</p>
+          <div class="sk_box">
+          <p class="commonP">See !! Skills that i have learned </p>
 
 
           <a href="#projectSection"><button class=" btn Sbtn projectBtn" >Projects</button></a>
           <!-- <button class="Sbtn"> <a href=""></a> Projects</button> -->
 
-        
+        </div>
          <div class="mySkills"> 
               
               <div class="skills-grid">
@@ -296,6 +300,7 @@
 
         <!-- ***my servicessss************************* -->
         <div class="container grid grid-3-Columns">
+
           <div class="service-card">
             <i class="fa-solid fa-desktop" id="service-Box"></i>
             <h3 class="service-Name">Web Design</h3>
@@ -382,7 +387,7 @@
 
 
           <div class="section-contact-container ">
-            <form action="https://formspree.io/f/xwpeogga" method="POST">
+            <form action="https://formspree.io/f/xwpeogga" method="POST" class="ContactF">
             
               <div class=" grid-Columns grid firstIn">
                 <div>
