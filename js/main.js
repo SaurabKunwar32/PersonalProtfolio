@@ -78,21 +78,21 @@ ScrollReveal({
 //   interval: 200,
 // });
 
-ScrollReveal().reveal(".this", { origin: "left"});
-ScrollReveal().reveal(".Mname", { origin: "left",delay:100});
-ScrollReveal().reveal(".para", { origin: "left",delay:200});
-ScrollReveal().reveal(".social-list li", { origin: "left",interval:150});
-ScrollReveal().reveal(".firstColumn", { origin: "bottom", delay:100});
+// ScrollReveal().reveal(".this", { origin: "left"});
+// ScrollReveal().reveal(".Mname", { origin: "left",delay:100});
+// ScrollReveal().reveal(".para", { origin: "left",delay:200});
+ScrollReveal().reveal(".social-list li", { origin: "bottom",interval:150});
+ScrollReveal().reveal(".firstColumn", { origin: "left", delay:100});
 ScrollReveal().reveal(".main-img", { origin: "right"});
 ScrollReveal().reveal(".topic", { origin: "right"});
-ScrollReveal().reveal(".ab1", { origin: "left"});
-ScrollReveal().reveal(".About-text", { origin: "right"});
+ScrollReveal().reveal(".ab1", { origin: "right"});
+ScrollReveal().reveal(".About-text", { origin: "left"});
 ScrollReveal().reveal(".sk_box", { origin: "left"});
 ScrollReveal().reveal(".skills-grid .skill ", { origin: "left",interval:100});
 ScrollReveal().reveal(".commonP", { origin: "left"});
 ScrollReveal().reveal(".projectImages .imgOverlay", { origin: "bottom",interval:100, delay:100});
-ScrollReveal().reveal(".secServices .service-card", { origin: "bottom",interval:100});
+ScrollReveal().reveal(".secServices .sevBOX", { origin: "top",interval:100});
 ScrollReveal().reveal(".contact1", { origin: "left",interval:100});
-ScrollReveal().reveal(".contactMedia li", { origin: "left",interval:100});
-ScrollReveal().reveal(".ContactF", { origin: "right",interval:100});
+ScrollReveal().reveal(".contactMedia li", { origin: "right",interval:100});
+ScrollReveal().reveal(".ContactF", { origin: "left",interval:100});
 
