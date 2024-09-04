@@ -102,26 +102,24 @@
     width: 100%;
     position: fixed;
     top: 0;
-    left: 120px;
-    background: var(--gradient);
-    backdrop-filter: blur(10rem);
-    /* filter: blur(50rem); */
-
-    transform: translateX(100%);
+    left: 140px;
+    background-color: hsla(0 ,0%, 10%, .3);
+    backdrop-filter: blur(24px); 
+    -webkit-backdrop-filter: blur(24px);   
+    transform: translateX(100%); 
     transition: all 0.5s linear;
     z-index: 1111;
-
+    color: var(--white);
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
   }
 
+
   .nav-lists {
     flex-direction: column;
-    /* align-items: center; */
     margin-top: 5rem;
     line-height: 3rem;
-    /* backdrop-filter: blur(50rem); */
   }
 
   .nav-lists li a {
@@ -271,6 +269,10 @@
   #Gbtn{
     margin-top: 15px;
   }
+
+  .downloadCV {
+    padding-left:0;
+  }
 }
 /* **********************************menu meida ******************************************* */
 
@@ -377,7 +379,7 @@
   }
 
   .Mname{
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 
   .mainFoot p {

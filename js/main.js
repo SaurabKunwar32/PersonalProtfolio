@@ -44,7 +44,7 @@ let linkBtn = document.getElementById("nav-lists");
 
 linkBtn.addEventListener("click", () => {
   headerEle.classList.remove("activeHead");
-  document.body.style.overflowY = "hidden";
+  // document.body.style.overflowY = "hidden";
 });
 
 menu.addEventListener("click", () => {
