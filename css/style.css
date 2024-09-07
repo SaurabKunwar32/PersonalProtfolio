@@ -7,6 +7,7 @@
 }
 
 /* ===================================ROOTS DEFINE============================== */
+
 :root {
   --shadow: rgb(235, 236, 238);
   --btn-color: #66b3ff;
@@ -29,6 +30,8 @@
   --btnTextcolor: white;
 }
 
+
+/* *************************************  MODE CHANGE  colors********************************** */
 .lightMode {
   --oddbg: lightgrey;
   --evenbg: #d7d7d7;
@@ -43,6 +46,12 @@
 .serviceColor #service-Box {
   background: var(--oddbg);
 }
+
+body.cursorChange{
+  cursor: url("../images/black.png"),auto;
+}
+
+
 /* ===================================ROOTS DEFINE end============================== */
 
 html {
@@ -50,10 +59,11 @@ html {
   font-size: 100%;
 }
 
+
 body {
   overflow-x: hidden;
   background: var(--oddbg);
-  /* cursor: url('../images/cur.png'); */
+  cursor: url('../images/white.png'),auto;
 }
 
 /*################################# HEADER START ############################################# */
@@ -148,7 +158,6 @@ nav a:hover::after {
 
 .modes svg:hover {
   fill: var(--btn-color);
-  cursor: pointer;
 }
 
 #icon2 {
@@ -184,6 +193,15 @@ nav a:hover::after {
 /* =====================================================================================================
                                      Always uasble section start
   ====================================================================================================== */
+
+
+svg{
+    cursor: pointer;
+}
+
+.btn{
+  cursor: pointer;
+}
 
 .section .topic {
   text-align: center;
@@ -296,7 +314,6 @@ span{
   text-transform: uppercase;
   display: flex;
   border-radius: 5px;
-  cursor: pointer;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -467,6 +484,7 @@ span{
   overflow: hidden;
   border-radius: 6px;
   height: 98%;
+  cursor: pointer;
 }
 
 .overlay {
@@ -546,6 +564,7 @@ span{
 .secServices .service-card:hover {
   transform: translateY(-0.8rem);
   box-shadow: var(--cardShadow);
+  cursor: pointer;
 }
 
 
@@ -576,6 +595,8 @@ span{
     border-radius: 56% 44% 70% 30%/ 30% 54% 46% 70%;
   }
 }
+
+
 
 .service-Name {
   margin: 1.5rem 0;

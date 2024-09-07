@@ -1,11 +1,12 @@
 // ====================== This is for the modes dark and light mode=========================
-let modes = document.querySelector(".modes");
+  let modes = document.querySelector(".modes");
 
-modes.addEventListener("click", () => {
-  document.body.classList.toggle("lightMode");
-  document.body.classList.toggle("textColor");
-  document.body.classList.toggle("serviceColor");
-});
+  modes.addEventListener("click", () => {
+    document.body.classList.toggle("lightMode");
+    document.body.classList.toggle("textColor");
+    document.body.classList.toggle("serviceColor");
+    document.body.classList.toggle("cursorChange");
+  });
 
 function toggleIcon() {
   let icon1 = document.getElementById("icon1");
