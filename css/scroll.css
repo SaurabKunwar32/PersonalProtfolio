@@ -8,7 +8,7 @@
 }
 
 
-/* SCROLL START */
+/* for scroll button or box on screen */
 
 .to-top {
   height: 40px;
@@ -18,8 +18,6 @@
   bottom: 16px;
   right: 16px;
   font-size: 30px;
-  /* border-radius: 50%; */
-  /* background: transparent; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,12 +59,24 @@
 /* SCROLL END */
 
 
-/* for head */
-.headAdd{
-/* background: var(--bg); */
-/* box-shadow: rgba(10, 10, 1, 0.2) 0px 1px 8px 0px;  */
-background: transparent;
-backdrop-filter: blur(20px);
+/* ================FOR blur header================ */
+
+.blurHeader{
+  background: transparent;
 }
+
+.blurHeader::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0 ,0%, 10%, .3);
+  backdrop-filter: blur(24px);
+  top: 0 ;
+  left: 0;
+  z-index: -1;
+}
+
+
 
 

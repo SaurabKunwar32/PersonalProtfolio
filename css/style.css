@@ -6,7 +6,7 @@
   font-family: "Nunito", sans-serif;
 }
 
-/* ===================================PRE DEFINE============================== */
+/* ===================================ROOTS DEFINE============================== */
 :root {
   --shadow: rgb(235, 236, 238);
   --btn-color: #66b3ff;
@@ -32,8 +32,6 @@
 .lightMode {
   --oddbg: lightgrey;
   --evenbg: #d7d7d7;
-  /* --oddbg:white;
-  --evenbg:white; */
   --btn-color: rgb(6, 111, 6);
   --white: black;
 }
@@ -45,7 +43,7 @@
 .serviceColor #service-Box {
   background: var(--oddbg);
 }
-/* ===================================PRE DEFINE end============================== */
+/* ===================================ROOTS DEFINE end============================== */
 
 html {
   overflow-x: hidden;
@@ -55,8 +53,7 @@ html {
 body {
   overflow-x: hidden;
   background: var(--oddbg);
-  /* overflow-y: hidden; */
-  /* position: relative; */
+  /* cursor: url('../images/cur.png'); */
 }
 
 /*################################# HEADER START ############################################# */
@@ -83,12 +80,9 @@ header a {
 }
 
 .logo {
-  /* background-color: red; */
   margin-left: 3.5rem;
-  /* padding-left: 3rem; */
   font-size: 30px;
   font-weight: 600;
-  animation: navSlide 0.8s linear alternate;
   text-shadow: 3px 2px 5px rgb(252, 230, 230);
   color: var(--white);
 }
@@ -132,11 +126,6 @@ nav a.active {
   gap: 0.5rem;
 }
 
-/* ######################################NAV hover commmm */
-/* nav:hover > :not(:hover){
-  opacity: 0.1;
-} */
-
 nav a::after {
   content: " ";
   position: absolute;
@@ -166,7 +155,7 @@ nav a:hover::after {
   display: none;
 }
 
-/* *******************MENU Start*********************** */
+/* ******************* FOr MENU Start *********************** */
 .menu-bar-btn {
   display: none;
   background-color: transparent;
@@ -185,15 +174,16 @@ nav a:hover::after {
 
 /*################################# HEADER END ############################################# */
 
+
+
+
 /* ################################## MAIN SECTION START##################################### */
 
-/* ===========================
-                  Always uasble section start
-                  ================================================= */
 
-.section {
-  /* padding: 6rem 0; */
-}
+
+/* =====================================================================================================
+                                     Always uasble section start
+  ====================================================================================================== */
 
 .section .topic {
   text-align: center;
@@ -228,18 +218,23 @@ h1 {
   font-size: 2rem;
 }
 
-/* ===========================
-                  Always uasble section end
-                  ================================================= */
+span{
+  color: var(--btn-color);
+}
+
+/* ==================================================================================================
+                                    Always uasble section end
+==================================================================================================== */
+
+
+
 
 /* **********************SECTION FIRST ******************* */
 
 .sec-one {
   background: var(--oddbg);
   padding: 11rem 0 8rem;
-  /* padding-bottom: 8rem; */
   position: relative;
-  /* overflow: hidden; */
 }
 
 .firstColumn {
@@ -249,21 +244,10 @@ h1 {
   font-size: 22px;
 }
 
-/* .this {
-  text-transform: uppercase;
-  color: var(--btn-color);
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-} */
 
-span{
-  color: var(--btn-color);
-}
 
 .this{
   text-transform: uppercase;
-  /* color: var(--btn-color); */
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 0.  5rem;
@@ -278,20 +262,17 @@ span{
 
 .Mname{
   font-size: 4rem;
-  /* color: var(--btn-color); */
 }
 
 .social-media {
   margin: 2rem 0 ;
   height: 2rem;
   max-width: 9rem;
-  /* margin-bottom: 1.5rem; */
-  /* background-color: red; */
+
 }
 
 .social-list {
   display: flex;
-  /* justify-content: space; */
   align-items: center;
   list-style: none;
 }
@@ -301,7 +282,6 @@ span{
   font-size: 1.5rem;
   color: var(--btn-color);
   margin-left: 1rem;
-  /* background-color: red; */
 }
 
 .social-list i:hover {
@@ -356,7 +336,6 @@ span{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: var(--oddbg);  */
   mix-blend-mode: color-burn;
 }
 
@@ -365,7 +344,12 @@ span{
   border-radius: 6px;
 }
 
-/* **********************first   end******************* */
+/* **********************first section   end******************* */
+
+
+
+/* ==================================================================================================== */
+
 
 /* **********************about   section start******************* */
 
@@ -390,16 +374,11 @@ span{
 
 .aboutSection img {
   width: 80%;
-  /* border: none; */
   mix-blend-mode: color-burn;
 }
 
-/* .About-text {
-  background -color: grey;
-} */
 
 .aboutM p {
-  /* background-color: green; */
   padding: 10px;
   text-align: left;
   font-size: 18px;
@@ -418,10 +397,14 @@ span{
   width: 180px;
   font-weight: 600;
   align-items: center;
-  /* outline: none; */
 }
 
 /* **********************about section  end******************* */
+
+
+
+/* ==================================================================================================== */
+
 
 /* **********************skills section  start******************* */
 
@@ -448,6 +431,11 @@ span{
 }
 
 /* **********************skill section  end******************* */
+
+
+
+/* ==================================================================================================== */
+
 
 /* **********************project section  start******************* */
 .projectSection {
@@ -511,8 +499,6 @@ span{
   width: 100%;
   height: 100%;
   background: var(--gradient);
-  /* background: linear-gradient(180deg,hsla(0, 0%, 0%, 0) 0%,
-  hsla(var(--hue),70%, 40%, .8) 120%); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -528,6 +514,8 @@ span{
 }
 
 /* **********************project section  end******************* */
+
+/* ============================================================================================ */
 
 /* **********************Service section  start******************* */
 .secServices {
@@ -568,7 +556,6 @@ span{
 #service-Box {
   font-size: 2.5rem;
   padding: 0.5rem;
-  /* background: rgb(231, 242, 247); */
   background: var(--white);
   display: inline-block;
   border-radius: 56% 44% 70% 30%/ 30% 54% 46% 70%;
@@ -604,6 +591,10 @@ span{
 }
 /* **********************Service section  end******************* */
 
+
+/* ================================================================================================== */
+
+
 /* **********************contact section  start******************* */
 
 .sec-contact {
@@ -611,11 +602,7 @@ span{
   padding: 4rem 0;
 }
 
-/* .sec-contact .grid{
-} */
-
 .contact1 {
-  /* background-color: red; */
   font-size: 17px;
 }
 
@@ -624,13 +611,11 @@ span{
 }
 
 .contact1 p {
-  /* background-color: blue; */
   max-width: 28.5rem;
   margin-bottom: 1rem;
 }
 
 .contactMedia li {
-  /* background-color: red;  */
   padding-top: 1rem;
   list-style: none;
 }
@@ -652,10 +637,7 @@ span{
 }
 
 .section-contact-container {
-  /* max-width: 40rem; */
-  /* margin: 0 auto;   */
   transition: all 0.3s linear;
-  /* background-color: red; */
 }
 
 .section-contact-container form {
@@ -674,20 +656,20 @@ span{
   outline: none;
   color: var(--white);
   font-size: 18px;
-  /* pointer-events: none; */
 }
 
 .firstIn {
   width: 100%;
 }
 
+input:focus,textarea:focus{
+  border-bottom: 2px solid var(--btn-color);
+}
+
 .inpText{
   position: relative;
 }
 
-.inpText:focus{
-  border-bottom: 2px solid var(--btn-color);
-}
 
 .textCon{
   position: absolute;
@@ -696,7 +678,6 @@ span{
   font-size: 18px;
   opacity: 0.7;
   pointer-events: none;
-  /* padding: 8px; */
 }
 
 .inpText:focus + .textCon{
@@ -707,34 +688,6 @@ span{
   opacity: 0.8;
 }
 
-
-/* 
-.emaiTxt{
-  position: relative;
-  background-color: red;
-}
-
-.emaiTxt:focus{
-  border-bottom: 2px solid var(--btn-color);
-}
-
-.EmaCon{
-  position: absolute;
-  top: 14px;
-  left: 280px;
-  font-size: 18px;
-  opacity: 0.7;
-  pointer-events: none;
-}
-
-.emaiTxt:focus + .EmaCon{
-  top: -10px;
-  background: transparent;
-  z-index: 1111;
-  font-size: 17px;
-  opacity: 0.8;
-}
- */
 
 .Sbtn {
   background-color: var(--btn-color);
@@ -762,9 +715,13 @@ span{
 
 /* ################################## MAIN SECTION END##################################### */
 
+
+/* =================================================================================================== */
+
+
 /* ############################## FOOTER SECTION START #################################### */
+
 footer {
-  /* background: var(--sheader); */
   background-color: var(--oddbg);
   display: flex;
   flex-direction: column;
