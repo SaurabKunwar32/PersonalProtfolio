@@ -105,7 +105,7 @@ ScrollReveal({
   duration: 2000,
 });
 
-ScrollReveal().reveal(".social-list li", { origin: "bottom", interval: 150 });
+ScrollReveal().reveal(".social-list li", { origin: "bottom", interval: 100 , delay: 300});
 ScrollReveal().reveal(".firstColumn", { origin: "left", delay: 100 });
 ScrollReveal().reveal(".main-img", { origin: "right" });
 ScrollReveal().reveal(".topic", { origin: "right" });

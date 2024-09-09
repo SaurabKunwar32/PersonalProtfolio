@@ -480,7 +480,13 @@ span{
   border-radius: 6px;
   position: relative;
   overflow: hidden;
-  filter: blur(1px);
+  transform: scale(1.8);
+  filter: blur(0.8px);
+  transition: all 0.8s linear;
+}
+
+.projectImages img:hover{
+  transform: scale(1);
 }
 
 .imgOverlay {
