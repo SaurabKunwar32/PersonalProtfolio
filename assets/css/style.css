@@ -721,6 +721,11 @@ input:focus,textarea:focus{
   opacity: 0.8;
 }
 
+/* Hide the label when the input is not focused and is valid */
+.inpText:not(:focus):valid + .textCon {
+  opacity: 0;
+}
+
 
 .Sbtn {
   background-color: var(--btn-color);
