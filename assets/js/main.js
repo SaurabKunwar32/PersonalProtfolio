@@ -1,40 +1,42 @@
- // Disabling  specific keyboard shortcuts 
-    document.addEventListener('keydown', (event)=>{
-      
-        if (
-          // Check for F12 (common shortcut to open developer tools)
-          (event.key === 'F12') ||
-
-          // Check for Ctrl + Shift + C ( for Windows/Linux)
-          (event.ctrlKey && event.shiftKey && (event.key === 'C' || event.key === 'c')) ||
-
-          // Check for Option + Command + C (For mac)
-          (event.metaKey && event.altKey && (event.key === 'C' || event.key === 'c')) ||
-
-          // Check for Ctrl + Shift + J ( for Windows/Linux)
-          (event.ctrlKey && event.shiftKey && (event.key === 'J' || event.key === 'j')) ||
-
-          // Check for Option + Command + J (For mac)
-          (event.metaKey && event.altKey && (event.key === 'J' || event.key === 'j')) ||
-
-          // Check for Option + Command + I (For mac)
-          (event.metaKey && event.altKey && (event.key === 'I' || event.key === 'i')) ||
-
-          // Check for Ctrl + Shift + I ( for Windows/Linux)
-          (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'i')) ||
-
-          // Check for Ctrl + Shift + K ( for Windows/Linux)
-          (event.ctrlKey && event.shiftKey && (event.key === 'K' || event.key === 'k')) ||
-
-          // Check for Option + Command + K (For mac)
-          (event.metaKey && event.altKey && (event.key === 'K' || event.key === 'k')))
-           {
-            event.preventDefault();
-        }
-    });
-
-
-
+// Disabling  specific keyboard shortcuts
+document.addEventListener("keydown", (event) => {
+  if (
+    // Check for F12 (common shortcut to open developer tools)
+    event.key === "F12" ||
+    // Check for Ctrl + Shift + C ( for Windows/Linux)
+    (event.ctrlKey &&
+      event.shiftKey &&
+      (event.key === "C" || event.key === "c")) ||
+    // Check for Option + Command + C (For mac)
+    (event.metaKey &&
+      event.altKey &&
+      (event.key === "C" || event.key === "c")) ||
+    // Check for Ctrl + Shift + J ( for Windows/Linux)
+    (event.ctrlKey &&
+      event.shiftKey &&
+      (event.key === "J" || event.key === "j")) ||
+    // Check for Option + Command + J (For mac)
+    (event.metaKey &&
+      event.altKey &&
+      (event.key === "J" || event.key === "j")) ||
+    // Check for Option + Command + I (For mac)
+    (event.metaKey &&
+      event.altKey &&
+      (event.key === "I" || event.key === "i")) ||
+    // Check for Ctrl + Shift + I ( for Windows/Linux)
+    (event.ctrlKey &&
+      event.shiftKey &&
+      (event.key === "I" || event.key === "i")) ||
+    // Check for Ctrl + Shift + K ( for Windows/Linux)
+    (event.ctrlKey &&
+      event.shiftKey &&
+      (event.key === "K" || event.key === "k")) ||
+    // Check for Option + Command + K (For mac)
+    (event.metaKey && event.altKey && (event.key === "K" || event.key === "k"))
+  ) {
+    event.preventDefault();
+  }
+});
 
 // ********************************** active  link part start*************************************
 
@@ -105,8 +107,16 @@ ScrollReveal({
   duration: 2000,
 });
 
-ScrollReveal().reveal(".social-list li", { origin: "bottom", interval: 100 , delay: 300});
-ScrollReveal().reveal(".firstColumn", { origin: "left", delay: 100 });
+ScrollReveal().reveal(".firstColumn", {
+  origin: "left",
+  delay: 200,
+  interval: 200,
+});
+ScrollReveal().reveal(".social-list li", {
+  origin: "bottom",
+  interval: 100,
+  delay: 300,
+});
 ScrollReveal().reveal(".main-img", { origin: "right" });
 ScrollReveal().reveal(".topic", { origin: "right" });
 ScrollReveal().reveal(".ab1", { origin: "right" });

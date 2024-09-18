@@ -2,7 +2,7 @@
 @media (max-width: 1447px) {
   .container {
     max-width: 62rem;
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   .grid {
@@ -54,6 +54,11 @@
 
 /* **********************************menu meida ******************************************* */
 @media (max-width: 1050px) {
+  header {
+    padding: 2rem 3rem;
+    height: 52px;
+  }
+
   .logo {
     font-size: 20px;
     margin: 0;
@@ -326,6 +331,10 @@
   .mainFoot p {
     text-align: center;
   }
+
+  .para {
+    margin: 8px 0;
+  }
 }
 
 @media screen and (max-width: 395px) {
@@ -360,12 +369,25 @@
 }
 
 @media (max-width: 340px) {
-  .Mname {
-    font-size: large;
+  .container {
+    padding: 1rem;
+  }
+
+  .para {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .about {
+    background-color: red;
   }
 }
 
 @media (max-width: 268px) {
+  .Mname {
+    font-size: 1.4rem;
+  }
+ 
   .mainFoot h1 {
     text-align: center;
   }

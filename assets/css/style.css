@@ -284,14 +284,13 @@ span{
 
 .social-media {
   margin: 2rem 0 ;
-  height: 2rem;
   max-width: 9rem;
-
 }
 
 .social-list {
   display: flex;
   align-items: center;
+  justify-content: end;
   list-style: none;
 }
 
@@ -300,25 +299,32 @@ span{
   font-size: 1.5rem;
   color: var(--btn-color);
   margin-left: 1rem;
+  
 }
 
-.social-list i:hover {
+ .social-media .social-list i {
+  padding: 0.5rem 0.5rem;
+  background: var(--evenbg);
+  border-radius: 4px;
+}
+
+ .social-media .social-list i:hover {
   transform: translateY(-8px);
   transition: all 0.6s ease;
 }
 
+
+
 .btn {
-  height: 2.5rem;
-  width: 11rem;
   background-color: var(--btn-color);
   text-transform: uppercase;
   display: flex;
+  align-items: center;
   border-radius: 5px;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  padding: 2px;
   border: none;
   outline: none;
 }
@@ -330,9 +336,16 @@ span{
   justify-content: space-between;
   align-items: center;
   padding: 0 0.5rem;
-  color: red;
   color: var(--btnTextcolor);
+  font-weight: 550;
 }
+
+#Gbtn{
+  height: 2.5rem;
+  width: 9.8rem;
+}
+
+
 
 .btn i {
   padding: 0 0.5rem 0;
@@ -410,8 +423,8 @@ span{
 }
 
 #dCV {
-  height: 3rem;
-  width: 180px;
+  height: 2.8rem;
+  width: 10.7rem;
   font-weight: 600;
   align-items: center;
 }
@@ -481,7 +494,7 @@ span{
   position: relative;
   overflow: hidden;
   transform: scale(1.8);
-  filter: blur(0.8px);
+  /* filter: blur(0.8px); */
   transition: all 0.8s linear;
 }
 
@@ -793,20 +806,25 @@ footer {
   font-size: 17px;
 }
 
-.socialList {
-  display: flex;
+.socialListF {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
   justify-content: center;
   list-style: none;
 }
 
-.socialList a {
+.socialListF a {
   text-decoration: none;
   padding: 0.8rem;
   font-size: 1.5rem;
   color: var(--btn-color);
+  padding: 0.2rem 0.5rem;
+  background: var(--evenbg);
+  border-radius: 4px;
 }
 
-.socialList li:hover {
+.socialListF li:hover {
   transform: translateY(-8px);
   transition: all 0.6s ease;
 }
