@@ -100,6 +100,120 @@ cv.addEventListener("click", () => {
   alert("Sorry CV not available");
 });
 
+// ================================= For projects===========================================
+
+const projects = [
+  {
+    imgSrc: "./assets/projectImage/TTC.png",
+    altText: "my works",
+    title: "Tic Tac Toe",
+    demoLink: "https://saurabkunwar32.github.io/TicTacToe/",
+  },
+  {
+    imgSrc: "./assets/projectImage/imgF.png",
+    altText: "my works",
+    title: "Image finder",
+    demoLink: "https://saurabkunwar32.github.io/image_Finder/",
+  },
+  {
+    imgSrc: "./assets/projectImage/allcon.png",
+    altText: "my works",
+    title: "All Countries",
+    demoLink: "https://all-countryapi.netlify.app",
+  },
+  {
+    imgSrc: "./assets/projectImage/ss6.jpg",
+    altText: "my works",
+    title: "Not available",
+    demoLink: "#projectSection",
+  },
+  {
+    imgSrc: "./assets/projectImage/ss3.jpg",
+    altText: "my works",
+    title: "Not available",
+    demoLink: "#projectSection",
+  },
+  {
+    imgSrc: "./assets/projectImage/ss5.jpg",
+    altText: "my works",
+    title: "Not available",
+    demoLink: "#projectSection",
+  },
+];
+
+const projectContainer = document.querySelector(".projectImages");
+
+projects.forEach((project) => {
+  const projectDiv = document.createElement("div");
+
+  projectDiv.className = "imgOverlay";
+
+  projectDiv.innerHTML = `
+   <img src="${project.imgSrc}" alt="${project.altText}" />
+      <div class="overlay">
+      <p>${project.title}</p>
+    <a href="${project.demoLink}">View Demo <i class="fa-regular fa-pen-to-square"></i></a>
+    </div> `;
+
+  projectContainer.append(projectDiv);
+});
+
+// ================================= For Services=================================================
+
+const service = [
+  {
+    iconClass: "fa-solid fa-desktop",
+    serviceName: "Service",
+    serviceInfo:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, tempora ducimus iste cum dolore eius.",
+  },
+  {
+    iconClass: "fa-solid fa-chart-line",
+    serviceName: "Service",
+    serviceInfo:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, tempora ducimus iste cum dolore eius.",
+  },
+  {
+    iconClass: "fa-brands fa-react",
+    serviceName: "Service",
+    serviceInfo:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, tempora ducimus iste cum dolore eius.",
+  },
+  {
+    iconClass: "fa-solid fa-earth-americas",
+    serviceName: "Service",
+    serviceInfo:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, tempora ducimus iste cum dolore eius.",
+  },
+  {
+    iconClass: "fa-brands fa-webflow",
+    serviceName: "Service",
+    serviceInfo:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, tempora ducimus iste cum dolore eius.",
+  },
+  {
+    iconClass: "fa-solid fa-notes-medical",
+    serviceName: "Service",
+    serviceInfo:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, tempora ducimus iste cum dolore eius.",
+  },
+];
+
+const serviceContainer = document.getElementById("Services");
+
+service.forEach((serve) => {
+  const serviceDiv = document.createElement("div");
+
+  serviceDiv.className = "sevBOX";
+  serviceDiv.innerHTML = `
+ <div class="service-card">
+    <i class="${serve.iconClass}" id="service-Box"></i>
+    <h3 class="service-Name">${serve.serviceName}</h3>
+    <p class="service-Info">${serve.serviceInfo} </p>
+    </div>`;
+  serviceContainer.append(serviceDiv);
+});
+
 // ************************************For animations sections*******************************************
 
 ScrollReveal({
