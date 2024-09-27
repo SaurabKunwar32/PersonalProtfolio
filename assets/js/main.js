@@ -122,10 +122,10 @@ const projects = [
     demoLink: "https://all-countryapi.netlify.app",
   },
   {
-    imgSrc: "./assets/projectImage/ss6.jpg",
+    imgSrc: "./assets/projectImage/COFFEWEB.png",
     altText: "my works",
-    title: "Not available",
-    demoLink: "#projectSection",
+    title: "Coffe web",
+    demoLink: "https://mycoffeweb.netlify.app",
   },
   {
     imgSrc: "./assets/projectImage/ss3.jpg",
